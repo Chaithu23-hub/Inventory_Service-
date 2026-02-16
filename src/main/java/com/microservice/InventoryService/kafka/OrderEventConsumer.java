@@ -13,8 +13,7 @@ public class OrderEventConsumer {
     private final InventoryService inventoryService;
 
     public OrderEventConsumer(
-            InventoryService inventoryService,
-            KafkaTemplate<String, Object> kafkaTemplate) {
+            InventoryService inventoryService) {
         this.inventoryService=inventoryService;
     }
 
